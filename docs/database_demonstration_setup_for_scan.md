@@ -66,7 +66,7 @@ $ ./localdb/setup_db.sh
 ```
 
 ## (c). Create scan config files from mongodb
-To create config files for scanConsole of YARR-SW, Run either command bellow.<br>
+To create config files for scanConsole of YARR-SW, Run **either** command bellow.<br>
 (We use the downloaded component's peoperty. Device's serial number is "20UPGRS0000009" or "20UPGRS0000010", chip's serial number is "20UPGRA0000026" or "20UPGRA0000027")
 ```bash
 $ ./localdb/bin/localdbtool-retrieve pull --chip 20UPGRS0000009 
