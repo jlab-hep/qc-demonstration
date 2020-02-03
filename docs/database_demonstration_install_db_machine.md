@@ -126,8 +126,8 @@ $ sudo systemctl start grafana-server
 ```
 
 ### Root
-Root SW installation:
-Link([https://root.cern.ch/downloading-root](https://root.cern.ch/downloading-root))
+Root SW installation<br>
+Link([https://root.cern.ch/downloading-root](https://root.cern.ch/downloading-root))<br>
 **Root SW have already installed in this machine.**<br>
 **You need to run only the following command.**
 ```bash
