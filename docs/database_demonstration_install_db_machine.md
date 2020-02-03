@@ -30,12 +30,6 @@ $ source /opt/rh/devtoolset-7/enable
 $ sudo yum install -y epel-release
 $ sudo yum install -y cmake3
 ```
-
-- Other dependencies
-```bash
-$ sudo yum install -y git emacs
-```
-
 ### Python packages
 
 - python3 version 3.6 or higher
@@ -102,6 +96,11 @@ Install and start influxDB
 ```bash
 $ sudo yum install -y influxdb
 $ sudo systemctl start influxdb
+$ influx
+...
+> create database "dcsDB"
+...
+> exit
 ```
 ### Grafana
 This is a web application to see the contents of influxdb.<br>
@@ -127,12 +126,11 @@ $ sudo systemctl start grafana-server
 ```
 
 ### Root
-Root SW installation
+Root SW installation:
+Link([https://root.cern.ch/downloading-root](https://root.cern.ch/downloading-root))
+**Root SW have already installed in this machine.**<br>
+**You need to run only the following command.**
 ```bash
-$ sudo yum install -y git cmake gcc-c++ gcc binutils libX11-devel libXpm-devel libXft-devel libXext-devel gcc-gfortran openssl-devel pcre-devel mesa-libGL-devel mesa-libGLU-devel glew-devel ftgl-devel mysql-devel fftw-devel cfitsio-devel graphviz-devel avahi-compat-libdns_sd-devel python-devel libxml2-devel giflib wget
-$ cd /opt
-$ wget https://root.cern/download/root_v6.18.04.Linux-centos7-x86_64-gcc4.8.tar.gz
-$ tar zxf root_v6.18.04.Linux-centos7-x86_64-gcc4.8.tar.gz
 $ source /opt/root/bin/thisroot.sh
 ```
 Go to next step.<br>

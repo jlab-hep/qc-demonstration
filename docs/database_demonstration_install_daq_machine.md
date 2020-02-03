@@ -1,11 +1,11 @@
 ## Installation of the DAQ machine
 For centos7<br>
 Setup the DAQ machine environment in this page. <br>
-<span style="color: red; ">**Use another shell than the DB machine's one and check if you are in local.**</span>
+
+<span style="color: red; ">**These SW and packages have already installed in the DAQ . Skip this step.**</span>
 
 ### Yarr SW
 Install "Yarr" in "work" directry:
-<span style="color: red; ">**"YARR-SW" has already installed. Don't need to do it.**</span>
 
 ```bash
 $ cd ~/work

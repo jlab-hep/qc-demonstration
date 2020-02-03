@@ -6,7 +6,7 @@ In order to see grafana on your browser, Run the following comand on your shell.
 Password is the DB server account's password.(Default is "password".)
 
 ```bash
-$ ssh -L 3000:localhost:3000 root@localdbserverXX -fN
+$ ssh -L 3000:localhost:3000 parrot@localdbserverXX -fN
 Password:
 ```
 ![ssh tunnel grafana](images/sshtunnel_grafana.png)
@@ -48,5 +48,3 @@ Login with the username: 'admin' and the password: 'admin'
 
 ![grafana add dashboard](images/demo_grafana_db_source_5.png)
 
-Go to next step.<br>
-[scanConsole and tuning](database_demonstration_scanconsole.md)<br>

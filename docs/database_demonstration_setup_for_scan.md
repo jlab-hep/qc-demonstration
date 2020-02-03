@@ -14,7 +14,7 @@ Password:
 Set username and password using the command bellow to connect to the mongoDB with authentication.<br>
 Input LocalDB admin's username and password that you have set prebiously.(e.g. USERNAME=hokuyama, PASSWORD=itkweek)
 ```bash
-$ cd ~/work/Yarr
+$ cd ~/work/YARR
 $ export username="USERBANE" 
 $ export password="PASSWORD" 
 ```
