@@ -12,13 +12,11 @@ Password:
 
 ## (a). Set username and password for mongodb 
 Set username and password using the command bellow to connect to the mongoDB with authentication.<br>
-Input LocalDB admin's username and password that you have set prebiously.
+Input LocalDB admin's username and password that you have set prebiously.(e.g. USERNAME=hokuyama, PASSWORD=itkweek)
 ```bash
 $ cd ~/work/Yarr
-$ source localdb/login_mongodb.sh
-Input mongodb accounts username: 
-Input mongodb accounts password: 
-[LDB]Username and password are saved.
+$ export username="USERBANE" 
+$ export password="PASSWORD" 
 ```
 
 ## (b). Setup database config
