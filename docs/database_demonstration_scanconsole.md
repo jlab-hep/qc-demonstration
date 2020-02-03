@@ -9,6 +9,8 @@ $ ./bin/scanConsole -r configs/controller/specCfg.json -c db-data/connectivity.j
 Next, run the dbAccessor to upload the DCS data from influxDB to LocalDB:
 ```bash
 $ ./bin/dbAccessor -F localdb/configs/influxdb_connectivity.json -n 20UPGRA0000026 -s data/last_scan/scanLog.json
+## or
+$ ./bin/dbAccessor -F localdb/configs/influxdb_connectivity.json -n 20UPGRA0000027 -s data/last_scan/scanLog.json
 ```
 Check the test result and DCS plot from following link [http://127.0.0.1:5000/localdb/scan](http://127.0.0.1:5000/localdb/scan).<br>
 
@@ -28,7 +30,9 @@ Test items for tuning are bellow:<br>
 
 Do this tuning step for the chip using the following commands as a module QC-minick.<br>
 If you want to integrate the DCS data for each scan, put the following command between scans.<br>
-"./bin/dbAccessor -F localdb/configs/influxdb_connectivity.json -n 20UPGRA0000026 -s data/last_scan/scanLog.json"
+"./bin/dbAccessor -F localdb/configs/influxdb_connectivity.json -n 20UPGRA0000026 -s data/last_scan/scanLog.json"<br>
+or<br>
+"./bin/dbAccessor -F localdb/configs/influxdb_connectivity.json -n 20UPGRA0000027 -s data/last_scan/scanLog.json"<br>
 
 ```bash
 $ ./bin/scanConsole -r configs/controller/specCfg.json -c db-data/connectivity.json -s configs/scans/rd53a/diff_analogscan.json -W

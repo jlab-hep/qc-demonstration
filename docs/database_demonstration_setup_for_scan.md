@@ -66,8 +66,8 @@ $ ./localdb/setup_db.sh
 ```
 
 ## (c). Create scan config files from mongodb
-To create config files for scanConsole of YARR-SW, Run the command bellow.<br>
-(We use the downloaded component's peoperty. Device's serial number is "20UPGRS0000009", chip's serial number is "20UPGRA0000026")
+To create config files for scanConsole of YARR-SW, Run either command bellow.<br>
+(We use the downloaded component's peoperty. Device's serial number is "20UPGRS0000009" or "20UPGRS0000010", chip's serial number is "20UPGRA0000026" or "20UPGRA0000027")
 ```bash
 $ ./localdb/bin/localdbtool-retrieve pull --chip 20UPGRS0000009 
 #DB WARNING# Not found test data of the component: 20UPGRS0000009
@@ -79,6 +79,18 @@ $ ./localdb/bin/localdbtool-retrieve pull --chip 20UPGRS0000009
 #DB INFO# Retrieve ... ./db-data/connectivity.json
 #DB INFO# -----------------------
 ```
+```bash
+$ ./localdb/bin/localdbtool-retrieve pull --chip 20UPGRS0000010 
+#DB WARNING# Not found test data of the component: 20UPGRS0000010
+#DB INFO# component data ID: 5e30318ca13f8d000aa2a22b 
+#DB INFO# - Parent    : 20UPGRS0000010 (module)
+#DB INFO# - Chip Type : RD53A
+#DB INFO# - Chips     : 20UPGRA0000027
+#DB INFO# Retrieve ... ./db-data/20UPGRA0000027.json
+#DB INFO# Retrieve ... ./db-data/connectivity.json
+#DB INFO# -----------------------
+```
+
 The config files for the module are generated in 'db-data'.<br>
 
 ## (d). Change stage name in the scan config file
@@ -88,13 +100,13 @@ Edit the connectivity file(***db-data/connectivity.json***) and change stage nam
     "stage": "WIREBONDING",
     "chips": [
         {
-            "config": "./db-data/20UPGRA0000026.json",
+            "config": "./db-data/20UPGRA00000XX.json",
             "tx": 0,
             "rx": 0
         }
     ],
     "module": {
-        "serialNumber": "20UPGRS0000009",
+        "serialNumber": "20UPGRS00000XX",
         "componentType": "module"
     },
     "chipType": "RD53A"

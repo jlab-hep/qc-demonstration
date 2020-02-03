@@ -3,7 +3,7 @@
 Go to the selection page [http://127.0.0.1:5000/localdb/select_test](http://127.0.0.1:5000/localdb/select_test)<br><br>
 
 **Input module name and stage at first.**<br>
-**Module:"20UPGRS0000009"**<br>
+**Module:"20UPGRS0000009" or "20UPGRS0000010"**<br>
 **Stage:"WIREBONDING"**<br><br>
 
 ![result_selection_for_itkpd.png](images/result_selection_for_itkpd.png)
