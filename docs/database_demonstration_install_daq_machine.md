@@ -5,6 +5,7 @@ Setup the DAQ machine environment in this page. <br>
 
 ### Yarr SW
 Install "Yarr" in "work" directry:
+<span style="color: red; ">**"YARR-SW" has already installed. Don't need to do it.**</span>
 
 ```bash
 $ cd ~/work
