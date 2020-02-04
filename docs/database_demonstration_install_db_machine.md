@@ -6,7 +6,7 @@ Setup the DB machine environment.
 
 Please run following command on your shell to connect DB machine via ssh.<br>
 We launched a virtual server and tell you the server name.<br>
-**Change the server name according to the given name** (e.g.:root@localdbserver1)<br> 
+**Change the server name accordingly** (e.g.:root@localdbserver1)<br> 
 The default password is "password".
 
 ```bash
@@ -19,16 +19,16 @@ Last login: ... 2020 from monkeyisland.dyndns.cern.ch
 ### yum packages
 - g++ version 7.0 or higher<br>
 ```bash
-$ sudo yum install -y centos-release-scl
-$ sudo yum install -y devtoolset-7
-$ source /opt/rh/devtoolset-7/enable
+sudo yum install -y centos-release-scl
+sudo yum install -y devtoolset-7
+source /opt/rh/devtoolset-7/enable
 ```
 
 - cmake3
 
 ```bash
-$ sudo yum install -y epel-release
-$ sudo yum install -y cmake3
+sudo yum install -y epel-release
+sudo yum install -y cmake3
 ```
 ### Python packages
 
@@ -41,15 +41,15 @@ Python 3.6.8
 
 - python pip packages
 ```bash
-$ sudo python3 -m pip install arguments coloredlogs Flask Flask-PyMongo Flask-HTTPAuth Flask-Mail pdf2image Pillow prettytable pymongo python-dateutil PyYAML pytz plotly matplotlib numpy requests tzlocal itkdb influxdb pandas
+sudo python3 -m pip install arguments coloredlogs Flask Flask-PyMongo Flask-HTTPAuth Flask-Mail pdf2image Pillow prettytable pymongo python-dateutil PyYAML pytz plotly matplotlib numpy requests tzlocal itkdb influxdb pandas
 ```
 
 ### LocalDB tools
 Tools to operate LocalDB
 ```bash
-$ cd ~/
-$ mkdir work && cd work
-$ git clone https://gitlab.cern.ch/YARR/localdb-tools.git
+cd ~/
+mkdir work && cd work
+git clone https://gitlab.cern.ch/YARR/localdb-tools.git
 ```
 
 ### Mongo DB
@@ -58,8 +58,8 @@ MongoDB version 4.2 or higher for Local DB<br>
 This is the database to store the QC results<br>
 **There might be some error masages but please ignore them and proceed.**
 ```bash
-$ cd ~/work/localdb-tools/scripts/shell
-$ ./upgrade_mongoDB_centos.sh
+cd ~/work/localdb-tools/scripts/shell
+./upgrade_mongoDB_centos.sh
 [sudo] password for dbuser: XXXXXXX
 OK!
 
@@ -76,7 +76,7 @@ y
 Start mongodb
 
 ```bash
-$ sudo systemctl start mongod.service
+sudo systemctl start mongod.service
 ```
 ### influxDB
 
@@ -94,12 +94,11 @@ EOF
 ```
 Install and start influxDB
 ```bash
-$ sudo yum install -y influxdb
-$ sudo systemctl start influxdb
-$ influx
+sudo yum install -y influxdb
+sudo systemctl start influxdb
+influx
 ...
 > create database "dcsDB"
-...
 > exit
 ```
 ### Grafana
@@ -121,8 +120,8 @@ EOF
 
 Install and start grafana
 ```bash
-$ sudo yum install -y grafana
-$ sudo systemctl start grafana-server
+sudo yum install -y grafana
+sudo systemctl start grafana-server
 ```
 
 ### Root
@@ -131,7 +130,7 @@ Root SW installation<br>
 Link([https://root.cern.ch/downloading-root](https://root.cern.ch/downloading-root))<br>
 **You need to run only the following command.**
 ```bash
-$ source /opt/root/bin/thisroot.sh
+source /opt/root/bin/thisroot.sh
 ```
 Go to next step.<br>
 [Setting for MongoDB](database_demonstration_mongodb.md)<br>

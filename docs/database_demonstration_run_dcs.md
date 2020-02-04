@@ -3,19 +3,8 @@
 ## Hook-up module to devices
 This step has already done.Plrease go to next.
 
-## Create an ssh tunnel 
-In order to connect to influxDB service in the DB machine from your local machine, Run the following comand on your shell.<br>
-**Change the server name according to the given name** (e.g.:parrot@localdbserver99)<br> 
-Password is the DB server account's password.(Default is "password".)
-
-```bash
-$ ssh -L 8086:localhost:8086 parrot@localdbserverXX -fN 
-Password:
-```
-![ssh tunnel influxdb](images/sshtunnel_influxdb.png)
-
-## (a) Run a script to get temperature
-To get environmental temperature and store the data into influxDB, do the following command.(only for monkeyisland)<br>
+## (a) Run a script to get temperature(for monkeyisland)
+To get environmental temperature and store the data into influxDB, do the following command.<br>
 <span style="color: red; ">**Don't stop this process during the readout process. Switch the shell from the next step.**</span>
 <br>
 For monkeyisland,
@@ -26,11 +15,17 @@ This measurement runs until ctrl+C is pressed!
 Temp1:??.??C     Temp2:??.??C
 ...
 ```
-## (b) Run LV IV
+## (b) Run LV IV(for yarrpixdaq)
 To run LV IV and get data, do the following command.(only for yarrpixdaq)<br>
 ```bash
 $ cd ~/reference/lowvoltageiv/
 $ python makeIVcurve.py
+```
+You can see the raw data in "IVout_test_0.json".<br>
+Create and check the IV plot with the following commands.<br>
+```bash
+$ python analyzeIV.py -i IVout_test_0 -o test  
+$ qpdfview 0x0796_test.png 
 ```
 
 ## (c) Run LV PS controller

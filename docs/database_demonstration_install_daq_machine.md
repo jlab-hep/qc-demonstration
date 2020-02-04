@@ -26,4 +26,4 @@ $ sudo python3 -m pip install arguments coloredlogs pdf2image Pillow pymongo pyt
 ```
 
 Go to next step.<br>
-[Download module ID infos](database_demonstration_download_itkpd.md)<br>
+[Create ssh tunnels from the DAQ machine to the DB machine](database_demonstration_create_ssh_tunnel.md)<br>

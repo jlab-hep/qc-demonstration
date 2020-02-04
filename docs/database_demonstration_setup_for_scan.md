@@ -1,14 +1,4 @@
 #Setup and create config files for the scan
-## Create ssh tunnel 
-In order to connect to the mongoDB in the DB machine from your local machine, Run the following comand on your shell.<br>
-**Change the server name according to the given name** (e.g.:parrot@localdbserver99)<br> 
-Password is the DB server account's password.(Default is "password".)
-
-```bash
-$ ssh -L 27017:localhost:27017 parrot@localdbserverXX -fN -p22
-Password:
-```
-![ssh tunnel mongodb](images/sshtunnel_mongodb.png)
 
 ## (a). Set username and password for mongodb 
 Set username and password using the command bellow to connect to the mongoDB with authentication.<br>
@@ -68,27 +58,13 @@ $ ./localdb/setup_db.sh
 ## (c). Create scan config files from mongodb
 To create config files for scanConsole of YARR-SW, Run **either** command bellow.<br>
 (We use the downloaded component's peoperty. Device's serial number is "20UPGRS0000009" or "20UPGRS0000010", chip's serial number is "20UPGRA0000026" or "20UPGRA0000027")
+For monkeyisland,
 ```bash
 $ ./localdb/bin/localdbtool-retrieve pull --chip 20UPGRS0000009 
-#DB WARNING# Not found test data of the component: 20UPGRS0000009
-#DB INFO# component data ID: 5e30318ca13f8d000aa2a22b 
-#DB INFO# - Parent    : 20UPGRS0000009 (module)
-#DB INFO# - Chip Type : RD53A
-#DB INFO# - Chips     : 20UPGRA0000026
-#DB INFO# Retrieve ... ./db-data/20UPGRA0000026.json
-#DB INFO# Retrieve ... ./db-data/connectivity.json
-#DB INFO# -----------------------
 ```
+For yarrpixdaq,
 ```bash
 $ ./localdb/bin/localdbtool-retrieve pull --chip 20UPGRS0000010 
-#DB WARNING# Not found test data of the component: 20UPGRS0000010
-#DB INFO# component data ID: 5e30318ca13f8d000aa2a22b 
-#DB INFO# - Parent    : 20UPGRS0000010 (module)
-#DB INFO# - Chip Type : RD53A
-#DB INFO# - Chips     : 20UPGRA0000027
-#DB INFO# Retrieve ... ./db-data/20UPGRA0000027.json
-#DB INFO# Retrieve ... ./db-data/connectivity.json
-#DB INFO# -----------------------
 ```
 
 The config files for the module are generated in 'db-data'.<br>

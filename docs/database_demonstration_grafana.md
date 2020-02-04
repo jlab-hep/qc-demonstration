@@ -1,16 +1,5 @@
 # grafana
 
-### Create an ssh tunnel 
-In order to see grafana on your browser, Run the following comand on your shell.<br>
-**Change the server name accordingly** (e.g.:root@localdbserver99)<br> 
-Password is the DB server account's password.(Default is "password".)
-
-```bash
-$ ssh -L 3000:localhost:3000 parrot@localdbserverXX -fN
-Password:
-```
-![ssh tunnel grafana](images/sshtunnel_grafana.png)
-
 ### (a) Access to the Web Page
 
 Access to [http://127.0.0.1:3000/](http://127.0.0.1:3000/) with the machine's browser on the same network as DB machine,<br>

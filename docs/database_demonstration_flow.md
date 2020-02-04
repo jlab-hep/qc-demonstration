@@ -27,6 +27,7 @@ In this QC demonstration, we can learn the following things:
 
 ### 2. Installation for the DAQ machine
 * [Installation for the DAQ machine](database_demonstration_install_daq_machine.md)
+* [Create ssh tunnels from the DAQ machine to the DB machine](database_demonstration_create_ssh_tunnel.md)
 
 ### 3. Download module ID info from the Production DB
 * [Download Module ID info](database_demonstration_download_itkpd.md)
