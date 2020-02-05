@@ -16,7 +16,7 @@ Temp1:??.??C     Temp2:??.??C
 ...
 ```
 ## (b) Run LV IV(for yarrpixdaq)
-To run LV IV and get data, do the following command.(only for yarrpixdaq)<br>
+To run LV IV and get data, do the following command.<br>
 ```bash
 $ cd ~/reference/lowvoltageiv/
 $ python makeIVcurve.py

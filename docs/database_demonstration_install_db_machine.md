@@ -6,8 +6,7 @@ Setup the DB machine environment.
 
 Please run following command on your shell to connect DB machine via ssh.<br>
 We launched a virtual server and tell you the server name.<br>
-**Change the server name accordingly** (e.g.:root@localdbserver1)<br> 
-The default password is "password".
+**Change the server name accordingly** (e.g.:parrot@localdbserver99)<br> 
 
 ```bash
 $ ssh parrot@localdbserverXX

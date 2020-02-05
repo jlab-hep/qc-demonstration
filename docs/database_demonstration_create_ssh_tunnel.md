@@ -5,9 +5,9 @@
 ![ssh tunnel](images/ssh_tunnel.png)
 
 ## Create ssh tunnels 
-In order to connect to DBs and web applications(mongoDB, influxDB, LocalDB viewer, grafana) in the DB machine from your local machine, Run the following comand on your shell.<br>
+In order to connect to the DBs and the web applications(mongoDB, influxDB, LocalDB viewer, grafana) in the DB machine from your local machine, Run the following comand on your shell.<br>
 **Change the server name accordingly** (e.g.:parrot@localdbserver99)<br> 
-Password is the DB server account's password.(Default is "password".)
+Password is the DB server account's password.
 
 ```bash
 # For mongoDB

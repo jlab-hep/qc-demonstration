@@ -6,7 +6,7 @@ Run the scan using the following command.(e.g. digitalscan)
 ```bash
 ./bin/scanConsole -r configs/controller/specCfg.json -c db-data/connectivity.json -s configs/scans/rd53a/std_digitalscan.json -W
 ```
-Next, run the dbAccessor to upload the DCS data from influxDB to LocalDB:
+Next, run the dbAccessor to upload the DCS data from influxDB to LocalDB:<br>
 For monkeyisland
 ```bash
 ./bin/dbAccessor -F localdb/configs/influxdb_connectivity.json -n 20UPGRA0000026 -s data/last_scan/scanLog.json
