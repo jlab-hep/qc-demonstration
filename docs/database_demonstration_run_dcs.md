@@ -1,7 +1,8 @@
 # Hook-up the module to the devices and run the DCS controller
 
 ## Hook-up module to devices
-This step has already done.Plrease go to next.
+![DCS system](images/demo_hook_up.png)
+![DCS system](images/demo_DCS_structure.png)
 
 ## (a) Run a script to get temperature(for monkeyisland)
 To get environmental temperature and store the data into influxDB, do the following command.<br>
