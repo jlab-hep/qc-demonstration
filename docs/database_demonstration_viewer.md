@@ -30,7 +30,8 @@ Cloning into '/root/work/localdb-tools/viewer/plotting-tool'...
 
 ### 2. Start LocalDB viewer with the command 'app.py'
 Start LocalDB viewer using the following command.<br>
-<span style="color: red; ">**Don't kill this process throughout the course of this tutorial. Use another shell from the next step.**</span>
+<span style="color: red; ">**Don't kill this process throughout the course of this tutorial. Use another shell from the next step.**</span><br>
+We recomend to run this function on background process.
 
 ```bash
 $ ./app.py --config admin_conf.yml

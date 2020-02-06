@@ -15,6 +15,8 @@ This measurement runs until ctrl+C is pressed!
 Temp1:??.??C     Temp2:??.??C
 ...
 ```
+"temp_controller" is only for this tutorial. It is not on git repo.
+
 ## (b) Run LV IV(for yarrpixdaq)
 To run LV IV and get data, do the following command.<br>
 ```bash
@@ -46,8 +48,15 @@ $ cd ~/reference/lowvoltageiv/
 $ python3 LV_controller.py
 ```
 
+"LV_controller" is only for this tutorial. It is not on git repo.
 
 ![DCS system](images/demo_dcs_system.png)
+
+E4control repo:([https://github.com/sdungs/E4control.git](https://github.com/sdungs/E4control.git))<br>
+labremote repo:([https://gitlab.cern.ch/berkeleylab/labRemote.git](https://gitlab.cern.ch/berkeleylab/labRemote.git))<br>
+LV IV script repo:([https://gitlab.cern.ch/YARR/utilities/lowvoltageiv.git](https://gitlab.cern.ch/YARR/utilities/lowvoltageiv.git))<br>
+These SW does not support the uploading system of the DCS data for influxDB so far.<br>
+Create a new DCS or shere these SW to take and store the DCS data.<br>
 
 ## The DCS data monitoring in Grafana
 Check the DCS data in "Grafana" by following the link bellow.<br>

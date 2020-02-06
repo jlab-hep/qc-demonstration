@@ -5,7 +5,7 @@ Set username and password using the command bellow to connect to the mongoDB wit
 Input LocalDB admin's username and password that you have set prebiously.(e.g. USERNAME=hokuyama, PASSWORD=itkweek)
 ```bash
 $ cd ~/work/YARR
-$ export username="USERBANE" 
+$ export username="USERNANE" 
 $ export password="PASSWORD" 
 ```
 
@@ -67,6 +67,7 @@ For yarrpixdaq,
 ```bash
 $ ./localdb/bin/localdbtool-retrieve pull --chip 20UPGRS0000010 
 ```
+![Retrieve config](images/database_retreive_config.png)
 
 The config files for the module are generated in 'db-data'.<br>
 

@@ -5,11 +5,13 @@ Download the component data from Production DB.<br>
 
 Go to the downloading page [http://127.0.0.1:5000/localdb/download_component](http://127.0.0.1:5000/localdb/download_component)<br><br>
 
-**Input LocalDB admin's username and password for "Authentication Required".**<br><br>
+**Input LocalDB admin's username and password for "Authentication Required".**<br>
+**Basically, admin only can go to this page and use the interfacing functions between prodDB and LocalDB.**<br><br>
 
 
 Follow the instruction bellow to download module from prodDB:
 ![download from itkpd](images/download_component_from_itkpd.png)
+![prodDB account](images/database_prodDB_account.png)
 
 You can check the downloaded component data using Viewer Application.<br>
 Check [http://127.0.0.1:5000/localdb/components](http://127.0.0.1:5000/localdb/components) on your browser,<br>

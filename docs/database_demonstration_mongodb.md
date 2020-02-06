@@ -21,6 +21,7 @@ Successfully added user:
 ...
 For checking the setting of Local DB: /etc/mongod.conf
 ```
+![mongo account](images/database_mongo_account.png)
 
 ## Lock mongoDB
 Lock the mongoDB so that only those who know the account name and password can read and write to it.<br>

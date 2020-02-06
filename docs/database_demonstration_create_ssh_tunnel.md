@@ -23,5 +23,6 @@ Password:
 $ ssh -L 3000:localhost:3000 parrot@localdbserverXX -fN
 Password:
 ```
+![Create ssh tunnel](images/sshtunnel_to_remote.png)
 Go to next step.<br>
 [Download module ID infos](database_demonstration_download_itkpd.md)<br>
