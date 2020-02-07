@@ -1,8 +1,9 @@
 # Hook-up the module to the devices and run the DCS controller
 
 ## Hook-up module to devices
-![DCS system](images/demo_hook_up.png)
+![DCS system picture](images/demo_hook_up.png)
 ![DCS system](images/demo_DCS_structure.png)
+![influx structure](images/influx_structure.png)
 
 ## (a) Run a script to get temperature(for monkeyisland)
 To get environmental temperature and store the data into influxDB, do the following command.<br>
@@ -17,6 +18,7 @@ Temp1:??.??C     Temp2:??.??C
 ...
 ```
 "temp_controller" is only for this tutorial. It is not on git repo.
+![temp structure](images/influx_temp_structure.png)
 
 ## (b) Run LV IV(for yarrpixdaq)
 To run LV IV and get data, do the following command.<br>
@@ -50,6 +52,7 @@ $ python3 LV_controller.py
 ```
 
 "LV_controller" is only for this tutorial. It is not on git repo.
+![LV structure](images/influx_LV_structure.png)
 
 ![DCS system](images/demo_dcs_system.png)
 

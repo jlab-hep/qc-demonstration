@@ -16,6 +16,8 @@ For yarrpixdaq
 ```bash
 ./bin/dbAccessor -F localdb/configs/influxdb_connectivity.json -n 20UPGRA0000027 -s data/last_scan/scanLog.json
 ```
+
+![influx upload](images/influx_upload_structure.png)
 Check the test result and DCS plot from following link [http://127.0.0.1:5000/localdb/scan](http://127.0.0.1:5000/localdb/scan).<br>
 
 ![demo scan](images/demo_scan.png)
