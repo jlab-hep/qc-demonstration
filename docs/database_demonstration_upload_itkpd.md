@@ -1,4 +1,8 @@
 ### Upload selected results to Production DB.
+<span style="color: red; ">
+**This function currently doesn't work well due to the update of production DB. Please skip it**<br><br>
+</span>
+
 
 Go to the selection page [http://127.0.0.1:5000/localdb/select_test](http://127.0.0.1:5000/localdb/select_test)<br><br>
 
