@@ -11,7 +11,7 @@ Install "Yarr" in "work" directry:
 $ cd ~/work
 ```
 Please follow the link bellow to install Yarr-SW.<br>
-[Yarr installation](https://yarr.readthedocs.io/en/latest/install/)
+[Yarr installation](http://yarr.web.cern.ch/yarr/install/)
 
 
 ### Python packages
