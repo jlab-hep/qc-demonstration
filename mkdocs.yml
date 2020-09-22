@@ -1,4 +1,4 @@
 site_name: QC demonstration Docs
 pages:
-    - Demonstration: database_demonstration_flow.md
+    - Demonstration: move_doc.md
 theme: readthedocs
